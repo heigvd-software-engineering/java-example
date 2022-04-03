@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.example</groupId>
+  <artifactId>bittorrent</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <properties>
+    <version.bt>1.10</version.bt>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.github.atomashpolskiy</groupId>
+      <artifactId>bt-core</artifactId>
+      <version>${version.bt}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.github.atomashpolskiy</groupId>
+      <artifactId>bt-http-tracker-client</artifactId>
+      <version>${version.bt}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.github.atomashpolskiy</groupId>
+      <artifactId>bt-dht</artifactId>
+      <version>${version.bt}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.github.atomashpolskiy</groupId>
+      <artifactId>bt-upnp</artifactId>
+      <version>${version.bt}</version>
+    </dependency>
+  </dependencies>
+
+</project>
