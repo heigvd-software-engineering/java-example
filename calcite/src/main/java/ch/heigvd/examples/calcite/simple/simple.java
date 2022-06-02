@@ -30,15 +30,8 @@ public class simple {
 
         SchemaPlus rootSchema = calciteConnection.getRootSchema();
 
-
-
-
         PlayerTable playerTable = new PlayerTableImpl(PLAYER_DATA);
-
         rootSchema.add("player", playerTable);
-
-
-
 
         String sql = "SELECT * FROM player";
         ResultSet resultSet = connection.createStatement().executeQuery(sql);

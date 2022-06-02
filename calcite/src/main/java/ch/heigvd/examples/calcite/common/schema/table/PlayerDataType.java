@@ -24,12 +24,6 @@ public class PlayerDataType implements Serializable {
         this.level = (int) current[2];
     }
 
-    public PlayerDataType(String[] current) {
-        this.id = Integer.parseInt(current[0]);
-        this.name = String.valueOf(current[1]);
-        this.level = Integer.parseInt(current[2]);
-    }
-
     public static Enumerator<PlayerDataType> enumerator(List<PlayerDataType> data) {
         return new Enumerator() {
 
@@ -39,7 +33,6 @@ public class PlayerDataType implements Serializable {
             public PlayerDataType current() {
                 Object current = data.get(i);
 
-                //Need to check id it's an array beacause of type in PlayerDataType
                 if(current.getClass().isArray()){
                     return new PlayerDataType((Object[]) current);
                 }
