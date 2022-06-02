@@ -8,5 +8,19 @@
     <artifactId>calcite</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    
+    <properties>
+        <version.bt>1.10</version.bt>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.calcite</groupId>
+            <artifactId>calcite-core</artifactId>
+            <version>1.30.0</version>
+        </dependency>
+    </dependencies>
+
+
 </project>
