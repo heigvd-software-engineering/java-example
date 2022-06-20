@@ -16,6 +16,11 @@ This example is separated on three smaller examples of calcite usage to help und
 It shows how to create a connection to calcite and manually register tables in the schema.
 Then make a SQL request and get the result in a `ResultSet` object
 
+## Function
+
+It shows how to create an aggregation methode add call it in a SQL statement.
+
+
 ## Simple
 
 The second step show hows to have a more complex table representation in the code base with a custom iterator to read data from the table.
