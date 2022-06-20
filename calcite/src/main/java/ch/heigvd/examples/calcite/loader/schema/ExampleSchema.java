@@ -1,4 +1,4 @@
-package ch.heigvd.examples.calcite.common.schema;
+package ch.heigvd.examples.calcite.loader.schema;
 
 import org.apache.calcite.schema.SchemaPlus;
 import org.apache.calcite.schema.impl.AbstractSchema;

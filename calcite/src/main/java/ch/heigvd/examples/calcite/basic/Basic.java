@@ -20,11 +20,19 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Properties;
 
-import static ch.heigvd.examples.calcite.common.Data.EQUIPMENT_DATA_AS_OBJECT_ARRAY;
-import static ch.heigvd.examples.calcite.common.Data.PLAYER_DATA_AS_OBJECT_ARRAY;
+public class Basic {
+
+    public static final List<Object[]> PLAYER_DATA_AS_OBJECT_ARRAY = Arrays.asList(
+            new Object[]{1, "Wizard", 5},
+            new Object[]{2, "Hunter", 7}
+
+    );
+    public static final List<Object[]> EQUIPMENT_DATA_AS_OBJECT_ARRAY = Arrays.asList(
+            new Object[]{1, "fireball", 7, 1},
+            new Object[]{2, "rifle", 4, 2}
 
 
-public class basic {
+    );
 
 
     public static void main(String[] args) throws SQLException {

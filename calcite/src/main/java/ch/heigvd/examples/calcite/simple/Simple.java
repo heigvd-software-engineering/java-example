@@ -1,8 +1,8 @@
 package ch.heigvd.examples.calcite.simple;
 
-import ch.heigvd.examples.calcite.common.schema.table.PlayerDataType;
-import ch.heigvd.examples.calcite.common.schema.table.PlayerTable;
-import ch.heigvd.examples.calcite.common.schema.table.PlayerTableImpl;
+import ch.heigvd.examples.calcite.simple.schema.table.PlayerDataType;
+import ch.heigvd.examples.calcite.simple.schema.table.PlayerTable;
+import ch.heigvd.examples.calcite.simple.schema.table.PlayerTableImpl;
 import org.apache.calcite.jdbc.CalciteConnection;
 import org.apache.calcite.schema.SchemaPlus;
 
@@ -14,10 +14,14 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Properties;
 
-import static ch.heigvd.examples.calcite.common.Data.PLAYER_DATA;
 
+public class Simple {
 
-public class simple {
+    public static final List<PlayerDataType> PLAYER_DATA = Arrays.asList(
+            new PlayerDataType(1, "Wizard", 5),
+            new PlayerDataType(2, "Hunter", 7)
+
+    );
 
     public static void main(String[] args) throws SQLException {
         Properties info = new Properties();

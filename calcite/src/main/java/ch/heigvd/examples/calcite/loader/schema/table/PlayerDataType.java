@@ -1,4 +1,4 @@
-package ch.heigvd.examples.calcite.common.schema.table;
+package ch.heigvd.examples.calcite.loader.schema.table;
 
 import org.apache.calcite.linq4j.Enumerator;
 

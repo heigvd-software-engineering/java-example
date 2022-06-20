@@ -1,4 +1,4 @@
-package ch.heigvd.examples.calcite.common.schema.table;
+package ch.heigvd.examples.calcite.simple.schema.table;
 
 
 import org.apache.calcite.adapter.java.AbstractQueryableTable;

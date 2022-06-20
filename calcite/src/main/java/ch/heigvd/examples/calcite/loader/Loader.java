@@ -6,15 +6,15 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Properties;
 
-public class loader {
+public class Loader {
 
     public static void main(String[] args) throws SQLException {
         Properties info = new Properties();
         // https://calcite.apache.org/javadocAggregate/org/apache/calcite/config/Lex.html#JAVA
         info.setProperty("lex", "MYSQL");
 
-        // The path of the model.json is based on the working directory
-        Connection connection = DriverManager.getConnection("jdbc:calcite:model=./model.json", info);
+        // The path of the loader.json is based on the working directory
+        Connection connection = DriverManager.getConnection("jdbc:calcite:model=./loader.json", info);
 
         String sql = "SELECT * FROM player";
         ResultSet resultSet = connection.createStatement().executeQuery(sql);
