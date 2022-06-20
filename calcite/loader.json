@@ -1,0 +1,18 @@
+{
+  "version": "1.0",
+  "defaultSchema": "Example",
+  "schemas": [
+    {
+      "name": "example",
+      "type": "custom",
+      "factory": "ch.heigvd.examples.calcite.loader.factory.ExampleSchemaFactory",
+      "tables": [
+        {
+          "name": "player",
+          "type": "custom",
+          "factory": "ch.heigvd.examples.calcite.loader.factory.PlayerTableFactory"
+        }
+      ]
+    }
+  ]
+}
